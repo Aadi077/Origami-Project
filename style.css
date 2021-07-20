@@ -2,7 +2,7 @@ h1{
     color: black
 }
 .Header{
-    background-color: cyan;
+    background-color: red;
     display:flex;
     justify-content: space-between;
 
@@ -26,12 +26,12 @@ body{
     justify-content: flex-end;
 }
 h1{
-    color: lightcoral;
-    border: 10px solid dimgray;
-    background-color: dimgrey;
+    color: white;
+    border: 10px solid red;
+    background-color: red;
 }
 body{
-    background-color: aliceblue;
+    background-color: coral;
 }
 img{
     border: 5px solid black;
@@ -43,4 +43,35 @@ p{
 }
 ol,ul{
     font-family: comic sans ms;
+}
+
+.Projects{
+    position:relative
+}
+.Projects p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0
+}
+.Projects:hover p{
+    opacity:1
+}
+.Projects:hover img{
+    opacity:0.33;
+    transform:scale(1.2);
+}
+a:link {
+    color:white;
+}
+a:visited{
+    color:white
+}
+.Menu{
+    display:flex;
+    margin-right: 30px;
+}
+.Menu a{
+    margin-left: 30px;
 }
